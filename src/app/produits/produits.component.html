@@ -1,0 +1,36 @@
+<section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+       <div class="section-header">
+         <br>
+          <h2>Welcome</h2>
+          <p>Welcome To <span>Our Store</span></p>
+       </div>
+      
+      <ul>
+         <li *ngFor="let produit of Produit">
+           
+            <div class="card " style="width: 18rem;">
+               <h5 class="card-title" style="color: firebrick;" >
+                  {{produit.name}}</h5> <br>
+              <img src="assets/img/hero-img.png" alt="">
+               <div class="card-body">
+                 
+                 <h5 class="card-description" style="color: rgb(11, 11, 11);">
+                 {{produit.description}}<br>
+                 {{produit.prix}}
+               </h5>
+
+                 
+                 
+                 <button routerLink="/menu" class="btn-book-a-table "><i class="bi bi-journal-text"></i> Details</button>
+                
+                  
+               </div>
+            </div>
+            
+         </li>
+      </ul>
+
+    </div>
+ </section>
+ 
